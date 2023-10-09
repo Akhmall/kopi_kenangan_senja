@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kopi Kenangan Senja</title>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,14 +13,28 @@
       rel="stylesheet"
     />
 
-    <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.querySelector(".loader").classList.add("loader--hidden");
+          document.body.style.overflow = "unset";
+        }, 2000);
+      });
+    </script>
 
-    <!-- My Style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Navbar start -->
+    <div class="loader">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="cup"><span></span></div>
+    </div>
+
     <nav class="navbar">
       <a href="#" class="navbar-logo">Kenangan<span>Senja</span>.</a>
 
@@ -38,9 +51,7 @@
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
-    <!-- Navbar end -->
 
-    <!-- Hero Section stars -->
     <section class="hero" id="home">
       <main class="content">
         <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
@@ -48,9 +59,7 @@
         <a href="#" class="cta">Beli Sekarang</a>
       </main>
     </section>
-    <!-- Hero Section end -->
 
-    <!-- About Sectionn start -->
     <section id="about" class="about">
       <h2><span>Tentang</span> Kami</h2>
 
@@ -72,9 +81,7 @@
         </div>
       </div>
     </section>
-    <!-- About Sectionn end -->
 
-    <!-- Menu Section start -->
     <section id="menu" class="menu">
       <h2><span>Menu</span> Kami</h2>
       <p>
@@ -115,9 +122,7 @@
         </div>
       </div>
     </section>
-    <!-- Menu Section end -->
 
-    <!-- Contact Section Start -->
     <secttion id="contact" class="contact">
       <h2><span>Kontak</span> Kami</h2>
       <p>
@@ -151,9 +156,7 @@
         </form>
       </div>
     </secttion>
-    <!-- Contact Section end -->
 
-    <!-- Footer Start -->
     <footer>
       <div class="sosials">
         <a href="#"><i data-feather="instagram"></i></a>
