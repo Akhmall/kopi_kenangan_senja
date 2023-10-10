@@ -29,13 +29,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgb(1, 1, 1, 0.8);
-  border-bottom: 1px solid var(--primary);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
+  backdrop-filter: blur(10px);
 }
 
 .navbar .navbar-logo {
@@ -311,9 +310,6 @@ footer .credit a {
   color: var(--bg);
   font-weight: 700;
 }
-
-/* Media Queris */
-/* Laptop */
 
 @media (max-width: 1336px) {
   html {
